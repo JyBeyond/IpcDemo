@@ -19,7 +19,14 @@
         <service
             android:name=".messager.MessagerService"
             android:process=":remote" />
+
         <activity android:name=".messager.MessagerActivity" />
+        <activity android:name=".aidl.BookManagerAcivity" />
+
+        <service
+            android:name=".aidl.BookManagerService"
+            android:process=":remote" />
+
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public interface IBookmanager extends IInterface {
 
     public void addBook(Book book) throws RemoteException;
 
-    public  class BookmanagerImpl extends Binder implements IBookmanager {
+    public static abstract class BookmanagerImpl extends Binder implements IBookmanager {
 
 
         public BookmanagerImpl() {

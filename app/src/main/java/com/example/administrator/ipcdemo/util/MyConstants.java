@@ -8,4 +8,5 @@ public class MyConstants {
 
     public static final int MSG_FROM_CLIENT = 0;
     public static final int MSG_FROM_SERVER = 1;
+    public static final int MESSAGE_NEW_BOOK_ARRIVED = 2;
 }
