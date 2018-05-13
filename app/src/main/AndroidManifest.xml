@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.ipcdemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +28,14 @@
         <service
             android:name=".aidl.BookManagerService"
             android:process=":remote" />
-
+        <provider
+            android:name=".contentProvide.BookProvide"
+            android:authorities="com.example.administrator.ipcdemo.book.provide"
+            android:permission="com.lijingya.PROVIDE"
+            android:process=":provide" />
+        <activity android:name=".contentProvide.ProvideActivity" />
+        <service android:name=".Socket.TCPService" />
+        <activity android:name=".Socket.TCPActivity" />
     </application>
 
 </manifest>
